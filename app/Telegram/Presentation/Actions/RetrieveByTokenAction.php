@@ -16,6 +16,6 @@ class RetrieveByTokenAction
 
         abort_unless(hash_equals($user->remember_token, $rememberToken), 401);
 
-        return (new UserPresenter($user));
+        return new UserPresenter($user);
     }
 }
