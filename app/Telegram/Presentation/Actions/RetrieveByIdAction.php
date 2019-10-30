@@ -14,6 +14,6 @@ class RetrieveByIdAction
     {
         $user = TelegramUser::findOrFail($telegramUserId)->user;
 
-        return (new UserPresenter($user));
+        return new UserPresenter($user);
     }
 }
