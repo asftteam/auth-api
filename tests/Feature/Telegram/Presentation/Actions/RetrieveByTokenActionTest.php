@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Telegram\Presentation\Actions;
 
-use App\Telegram\Domain\Models\TelegramUser;
 use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
